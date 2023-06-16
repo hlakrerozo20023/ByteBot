@@ -1,0 +1,17 @@
+# Repository: ByteBot
+
+def byte_to_kilobyte(byte):
+    kilobyte = byte / 1024
+    return kilobyte
+
+def kilobyte_to_byte(kilobyte):
+    byte = kilobyte * 1024
+    return byte
+
+file_size = 2048  # in bytes
+
+file_size_kb = byte_to_kilobyte(file_size)
+print(f"The file size is {file_size_kb} kilobytes.")
+
+file_size_bytes = kilobyte_to_byte(file_size_kb)
+print(f"The file size is {file_size_bytes} bytes.")
